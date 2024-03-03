@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class=" main-conatiner">
+    <section class="table-container" id="table-container">
+        <!-- <button class="print">Print</button> -->
+        <table class="billing-table" id="billing-table">
+            <thead class="main-head-row" id="main-head-row">
+                <!-- This is main head row -->
+                <th class="srNo" id="srNo">SrNo</th>
+                <th class="product-name" id="product-name">Description of Goods</th>
+                <th class="HSN" id="HSN">HSN/SAC</th>
+                <th class="quanity" id="quantity">Quantity</th>
+                <th class="rate" id="rate">Rate</th>
+                <th class="per" id="per">Per</th>
+                <th class="amount" id="amount">Amount</th>
+                <th class="discount" id="discount">Discount</th>
+                <th class="gross-total" id="gross-total">Gross Total</th>
+            </thead>
+            <tbody class="main-body-row" id="main-body-row">
+                <tr class="blank-space-row" id="blank-space-row1">
+                    <td>1</td>
+                    <td id="product-name1">taxi</td>
+                    <td>1548122</td>
+                    <td>1</td>
+                    <td>1200000</td>
+                    <td>PER</td>
+                    <td>121214442</td>
+                </tr>
+                <tr class="total-value" id="total-value">
+                    <td class="blank"></td>
+                    <td class="total-sum" id="total-sum">Total</td>
+                    <td class="blank"></td>
+                    <td class="total-quantity" id="total-quantity">PCS</td>
+                    <td class="blank"></td>
+                    <td class="blank"></td>
+                    <td class="total-amount" id="total-amount">@</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="form-section" id="form-section">
+        <form action="" class="main-form" id="main-form">
+            <label for="modelName"> Model Name</label>
+            <select name="model-name" id="modelName">
+                <option value="yatri-super">Yatri Super</option>
+                <option value="E-cart">E-cart</option>
+                <option value="Yatri-DLX">yatri DLX</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="color-name"> Color :</label>
+            <input type="text" name="color" id="color-name" placeholder="Enter the color">
+            <label for="price">Price</label>
+            <input type="number" name="price">
+            <label for="qunatityPro">Quantity</label>
+            <input type="number" name="qunatityPro" >
+            <button class="submit" id="submit">Submit</button>
+        </form>
+    </section>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

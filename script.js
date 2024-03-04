@@ -51,6 +51,11 @@ form.addEventListener("submit",function(e){
     // Here we have the gross total now we can add the gross total of the elements
     let grosstotalAmount=document.getElementById("grosstotal");
     grosstotalAmount.innerHTML=sumGross;
+    // Here we need to hide the form button and present the pdf 
+    let formSection=document.getElementById("form-section");
+    formSection.classList.toggle("display-off");
+    let mainContainer=document.getElementById("main-container");
+    mainContainer.classList.toggle("display-off");
 });
 // here we need to add the find this element
 let modelName=document.getElementById("modelName");

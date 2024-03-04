@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class=" main-conatiner display-off">
+    <div id ="main-container"class=" main-conatiner display-off">
         <h2> TAX INVOICE </h2> 
         <div class="company-details">
             <div class="company-deatils-left" id="company-details-left">
@@ -124,8 +124,10 @@
     </section>
   </div>
     <section class="form-section" id="form-section">
-        <form action="" class="main-form" id="main-form">
-            <div class="model-replace">
+        <form action="" class="main-form my-2" id="main-form">
+            <h3> Model details</h3>
+        <div class="model-replace">
+           
             <label for="modelName"> Model Name</label>
             <select name="model-name" id="modelName">
                 <option value="yatri-super">Yatri Super</option>
@@ -137,14 +139,15 @@
                 <!-- <label for="newElement"> Product-Name</label>
                 <input type="text" name="newElement" id=""> -->
             </div>
-        </div>
+         
             <label for="color-name"> Color :</label>
             <input type="text" name="color" id="color-name" placeholder="Enter the color">
             <label for="price">Price</label>
             <input type="number" name="price">
             <label for="qunatityPro">Quantity</label>
             <input type="number" name="qunatityPro" >
-            <h2> Customer's Details</h2>
+        </div>
+            <h3> Customer's Details</h3>
             <div class="customer-details-section">
                 <label for="customer-name"> Customer Name</label>
                 <input type="text" name="customer-name">
@@ -153,7 +156,7 @@
                 <label for="mode-payment"> Mode of Payment</label>
                 <input type="text" name="mode-payment">
             </div>
-            <button class="submit" id="submit">Submit</button>
+            <button class="submit my-2" id="submit">Submit</button>
         </form>
     </section>
   

@@ -170,7 +170,7 @@ h4{
     flex-direction: column;
 }
 textarea{
-    width: 400px;
+    width: fit-content;
 }
 .display-off{
     display: none;

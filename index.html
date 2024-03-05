@@ -38,8 +38,8 @@
         </div>
         </div>
         <div class="product-supplied-right">
-            Mode/Terms of Payment<br>
-              BANSAL CREDITD LTD
+            <b>Mode/Terms of Payment</b><br>
+              <span id="modetrans"></span>
         </div>
         </div>
         <hr>
@@ -65,11 +65,16 @@
             <tbody class="main-body-row" id="main-body-row">
                 <tr class="blank-space-row" id="blank-space-row1">
                     <td>1</td>
-                    <td id="product-name1"><b>MODEL:</b> <span class="vehicle-name1" id="vehicle-name"><span><b>MOTOR NO</b></span>
-                        <span class="motor-no" id="motor-no"></span></span>
+                    <td id="product-name1"><b>MODEL:</b> 
+                        <span class="vehicle-name1" id="vehicle-name"></span>
+                        <span><b>MOTOR NO</b></span>
+                        <span class="motor-no" id="mmotor"></span>
+                    
                         <span>CHASSIS NO:</span>
-                        <span class="chasis-no" id="chasis-no"></span>
-                        <span>COLOR :</span><span class="colorname" id="colorname"></span><span class="battery-no" id="battery-no"></span></td>
+                        <span class="chasisNo" id="chasisNumber"></span>
+                        <span>COLOR :</span><span class="colorname" id="colorname"></span>
+                        
+                        <span>Battery No</span><span class="battery-no" id="battery-number"></span></td>
                     <td>1548122</td>
                     <td id="quantity-number">1</td>
                     <td id="product-price"></td>
@@ -148,12 +153,12 @@
          
             <label for="color-name"> Color :</label>
             <input type="text" name="color" id="color-name" placeholder="Enter the color">
-            <label for="chassis-number"> Chassis Number</label>
-            <input type="text" placeholder="Chassis number " name="chassis-number">
-            <label for="motor-number">Motor Number</label>
-            <input type="text" placeholder="motor-number" name="motor-number">
-            <label for="battery-number"> Battery Number</label>
-            <input type="text" placeholder="Battery number of the vehicle" name="battery-number">
+            <label for="chassisNumber"> Chassis Number</label>
+            <input type="text" placeholder="Chassis number " name="chassisNumber">
+            <label for="motorNumber">Motor Number</label>
+            <input type="text" placeholder="motor-number" name="motorNumber">
+            <label for="batteryNumber"> Battery Number</label>
+            <input type="text" placeholder="Battery number of the vehicle" name="batteryNumber">
             <label for="price">Price</label>
             <input type="number" name="price" placeholder="Price of the vehicle">
             <label for="qunatityPro">Quantity</label>
@@ -169,8 +174,8 @@
                 <input type="text" name="city" id="" placeholder="example - Bikaner"> 
                 <label for="pincode">Pincode</label>
                 <input type="number" name="pincode" id="" placeholder="Enter customer city pincode">
-                <label for="mode-payment"> Mode of Payment</label>
-                <input type="text" name="mode-payment">
+                <label for="modePayment"> Mode of Payment</label>
+                <input type="text" name="modePayment" id="mode-payment">
                 <label for="customerMobile">Mobile No</label>
                 <input type="tel" placeholder="Customer mobile Number" name="customerMobile" maxLength="10">
             </div>

@@ -38,12 +38,27 @@ form.addEventListener("submit",function(e){
    let totalAmount=price*quantity1;
    let totalAmoutPrice=document.getElementById("total-amount");
    totalAmoutPrice.innerHTML=totalAmount;
+   /// -->> here we fill add chessis number
+
+
+   let chasisNumber=form.chassisNumber.value;
+    extractdomy(chasisNumber);
+
+    /// Here we will add motor number and battery number as well
+    let motorNumber2=form.motorNumber.value;
+    let motorNumber3=document.getElementById("mmotor");
+    motorNumber3.innerHTML=motorNumber2;
+    
+    // Here we will add battery Number also
+    // let batteryNumber1=form.batteryNumber.value;
+    let formBatterynumber=document.getElementById("battery-number");
+    formBatterynumber.innerHTML=form.batteryNumber.value;
+
     //// here we need to add all the elemnts in the given table
     let srNo=1;
     // Here we need to calculate the gross total
     let grosstotal=[];
     grosstotal.push(totalAmount);
-    console.log(grosstotal);
     let sumGross=0;
     for(let i=0;i<grosstotal.length;i++){
         sumGross+=grosstotal[i];
@@ -52,7 +67,7 @@ form.addEventListener("submit",function(e){
     let grosstotalAmount=document.getElementById("grosstotal");
     grosstotalAmount.innerHTML=sumGross;
     let totalAmountAll=document.getElementById("total-amount2");
-    totalAmountAll.innerHTML=sumGross;
+    totalAmountAll.innerHTML="₹"+sumGross;
     /// Here we need to add the data of coustomer
     let cusAddress=form.customerAddress.value;
     // console.log(cusAddress);
@@ -64,6 +79,10 @@ form.addEventListener("submit",function(e){
     // -----> Mobile number section
     let mobileNumber=form.customerMobile.value;
     extractMobile(mobileNumber);
+    //-------> Here we will add mode of transaction 
+    let modeOfTransaction=form.modePayment.value;
+    extractModeOftransaction(modeOfTransaction);
+
     // Here we need to hide the form button and present the pdf 
     let formSection=document.getElementById("form-section");
     formSection.classList.toggle("display-off");
@@ -100,4 +119,15 @@ print.addEventListener("click",function(){
 function extractMobile(mobileNumber){
     let mobileCustomer=document.getElementById("customer-mobileNo");
     mobileCustomer.innerHTML=mobileNumber;
+}
+function extractModeOftransaction(result){
+    let modetrans=document.getElementById("modetrans");
+    modetrans.innerHTML=result;
+}
+// chasisumber
+function extractdomy(result){
+    // here we will use the same pamplet
+    let midder=document.getElementById(`chasisNumber`);
+    console.log(midder);
+    midder.innerHTML=result;
 }

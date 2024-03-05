@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Yatri Invoice</title>
 </head>
 <body>
-    <div id ="main-container"class=" main-conatiner display-off">
+<div class="print-content">
+    <div id ="main-container"class= "main-conatiner display-off">
+        <button class="print submit" id="print">Print</button>
         <h2> TAX INVOICE </h2> 
         <div class="company-details">
             <div class="company-deatils-left" id="company-details-left">
@@ -29,7 +31,11 @@
         <div class="product-supplied">
             <div class="product-supplied-left">
         <b>Billing Address<br>
-            <span class="billing-address" id="billing-address"></span></b>
+            <div class="billing-Address-area">
+            <span class="billing-address" id="billing-address1"></span></b>
+            <span>Pincode :</span><span class="" id="citypincode"></span>
+            <span>Mobile NO</span><span id="customer-mobileNo"></span>
+        </div>
         </div>
         <div class="product-supplied-right">
             Mode/Terms of Payment<br>
@@ -61,16 +67,16 @@
                     <td>1</td>
                     <td id="product-name1"><b>MODEL:</b> <span class="vehicle-name1" id="vehicle-name"><span><b>MOTOR NO</b></span>
                         <span class="motor-no" id="motor-no"></span></span>
-                        <span>CHASIS NO:</span>
+                        <span>CHASSIS NO:</span>
                         <span class="chasis-no" id="chasis-no"></span>
                         <span>COLOR :</span><span class="colorname" id="colorname"></span><span class="battery-no" id="battery-no"></span></td>
                     <td>1548122</td>
                     <td id="quantity-number">1</td>
-                    <td id="product-price">1200000</td>
+                    <td id="product-price"></td>
                     <td>PER</td>
-                    <td id="total-amount">121214442</td>
+                    <td id="total-amount"></td>
                     <td >0%</td>
-                    <td id="grosstotal">1200000</td>
+                    <td id="grosstotal"></td>
                     <td>0</td>
                     <td>0</td>
                     <td>0</td>
@@ -82,7 +88,7 @@
                     <td class="total-quantity" id="total-quantity">PCS</td>
                     <td class="blank"></td>
                     <td class="blank"></td>
-                    <td class="total-amount" id="total-amount">@</td>
+                    <td class="total-amount" id="total-amount2">@</td>
 
                 </tr>
             </tbody>
@@ -142,19 +148,31 @@
          
             <label for="color-name"> Color :</label>
             <input type="text" name="color" id="color-name" placeholder="Enter the color">
+            <label for="chassis-number"> Chassis Number</label>
+            <input type="text" placeholder="Chassis number " name="chassis-number">
+            <label for="motor-number">Motor Number</label>
+            <input type="text" placeholder="motor-number" name="motor-number">
+            <label for="battery-number"> Battery Number</label>
+            <input type="text" placeholder="Battery number of the vehicle" name="battery-number">
             <label for="price">Price</label>
-            <input type="number" name="price">
+            <input type="number" name="price" placeholder="Price of the vehicle">
             <label for="qunatityPro">Quantity</label>
-            <input type="number" name="qunatityPro" >
+            <input type="number" name="qunatityPro" placeholder="Quantity of the vehicle" >
         </div>
             <h3> Customer's Details</h3>
             <div class="customer-details-section">
                 <label for="customer-name"> Customer Name</label>
-                <input type="text" name="customer-name">
-                <label for="customer-address"> Customer Address</label>
-                <textarea name="customer-address" id="" cols="20" rows="5"></textarea>
+                <input type="text" name="customer-name" placeholder="Enter the name of the customer">
+                <label for="customerAddress"> Customer Address</label>
+                <input type="text" name="customerAddress" id="" placeholder="Enter the Address of the customer" ></textarea>
+                <label for="city">City</label>
+                <input type="text" name="city" id="" placeholder="example - Bikaner"> 
+                <label for="pincode">Pincode</label>
+                <input type="number" name="pincode" id="" placeholder="Enter customer city pincode">
                 <label for="mode-payment"> Mode of Payment</label>
                 <input type="text" name="mode-payment">
+                <label for="customerMobile">Mobile No</label>
+                <input type="tel" placeholder="Customer mobile Number" name="customerMobile" maxLength="10">
             </div>
             <button class="submit my-2" id="submit">Submit</button>
         </form>

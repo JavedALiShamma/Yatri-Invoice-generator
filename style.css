@@ -4,9 +4,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .print-content{
-    margin: 2%;
-    width: 90vw;
+    /* margin: 1%; */
+    width: 95vw;
     height: auto;
+    /* overflow-y: scroll; */
     display: inline-block;
     border: 2px solid black;
 }
@@ -26,27 +27,48 @@ h2{
 table{
     /* display: inline-block; */
     
+    width: 100%;
+/*    
     border-collapse: collapse;
-    border: 2px solid black;
+    display: inline-block;
+    border: 2px solid black; */
 }
 
 #table-container{
     width: auto;
     height: auto;
-    padding-left: 5px;
+    /* border: 20px solid rebeccapurple; */
+    /* padding-left: 5px; */
  
     /* background-color:yellowgreen; */
 }
 .billing-table{
-    width: 92%;
+    width: 99%;
     height: auto;
-}
-
-th{
     border: 1px solid black;
+    /* border: 20px solid red; */
+}
+.down-table{
+    margin-top: 10px;
+}
+td span{
+    max-width: 150px;
+    word-wrap: break-word;
+    /* max-height: 400px; */
+}
+th{
+    width: auto;
+    border: 1px solid black;
+    font-size: x-small;
+    word-wrap: wrap;
+    /* text-align: center; */
 }
 td{
- border: 1px solid black;
+    width: auto;
+    border: 1px solid black;
+    font-size: small;
+    word-wrap: wrap;
+    /* text-align: center; */
  
 }
 .blank-space-row{
@@ -111,25 +133,26 @@ h4{
 }
 .invoice-details{
     font-weight: 300;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     width: 50%;
-    height: 100px;
+    height: auto;
     /* border: 1px solid red; */
 }
 .invoice-table{
     padding-left: 20px;
-    margin-top: 20px;
+    margin-top: 1px;
     width: 50%;
     /* border: 1px solid green; */
-    height: 100px;
+    height: auto;
 }
 .invoice-table1 td{
     width: 50%;
     border: 1px solid black;
+    font-size: small;
 }
 .signature{
     margin-right: 30px;
-    margin-top: 80px;
+    margin-top: 30px;
     text-align: end !important;
 }
 .company-deatils-left{
@@ -217,4 +240,8 @@ form>input{
 .billing-Address-area{
     display: flex;
     flex-direction: column;
+}
+.main-head-row{
+    /* width: 100%;
+    border:20px solid red !important; */
 }

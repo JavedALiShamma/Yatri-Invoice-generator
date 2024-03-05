@@ -88,9 +88,7 @@ form.addEventListener("submit",function(e){
     formSection.classList.toggle("display-off");
     let mainContainer=document.getElementById("main-container");
     mainContainer.classList.toggle("display-off");
-    
-    
-
+   
 });
 // here we need to add the find this element
 let modelName=document.getElementById("modelName");
@@ -111,8 +109,7 @@ function addNewField(){
 }   
 /// here we need to print
 let print=document.getElementById("print");
-print.addEventListener("click",function(){
-    print.classList.toggle="display-off";
+print.addEventListener("click",function(e){
     window.print();
 });
 // Here we will extract the mobile number of the customer 

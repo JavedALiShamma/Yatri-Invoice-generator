@@ -56,6 +56,13 @@ td span{
     word-wrap: break-word;
     /* max-height: 400px; */
 }
+span{
+    word-wrap: break-word;
+}
+.billing-Address-area{
+    /* font-size: small; */
+    max-width: 400px;
+}
 th{
     width: auto;
     border: 1px solid black;

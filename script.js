@@ -34,7 +34,7 @@ form.addEventListener("submit",function(e){
     let quantity1=form.qunatityPro.value;
     let quantitynumber=document.getElementById("quantity-number");
     quantitynumber.innerHTML=quantity1;
-
+    // if(quantity1>1){}
    let totalAmount=price*quantity1;
    let totalAmoutPrice=document.getElementById("total-amount");
    totalAmoutPrice.innerHTML=totalAmount;
